@@ -3,22 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="lands.vista.login"
              BindingContext="{Binding main, Source={StaticResource locator}}"
-             Title="LOGIN">
+             Title="LANSD">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Padding="10,20,10,5">
-                <Label 
+            <StackLayout Padding="10,10,10,5">
+                <!--<Label 
                     Text="lands"
                     FontAttributes="Bold"
                     FontSize="Large"
                     HorizontalOptions="Center"
-                />
+                />--> 
                 <Image
                     Source="onu"
-                    WidthRequest="100"
+                    WidthRequest="200"
                 />
 
-                <Grid Margin="0,0">
+                <Grid Margin="10,0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="2*"/>
@@ -66,19 +66,22 @@
                     HorizontalOptions="Center"
                     TextColor="Blue"
                 />
-                <StackLayout Margin="40,0">
+                <StackLayout Margin="40,0"
+                             Orientation="Horizontal">
                     <Button 
                         Text="login"
-                        BackgroundColor="Blue"
+                        BackgroundColor="Green"
                         HeightRequest="46"
+                        HorizontalOptions="FillAndExpand"
                         BorderRadius="23"
                         TextColor="White"
                     />
                     <Button
                         Text="registrar"
-                        BackgroundColor="Blue"
+                        BackgroundColor="Red"
                         BorderRadius="23"
                         HeightRequest="46"
+                        HorizontalOptions="FillAndExpand"
                         TextColor="White"
                     />
                 </StackLayout>
